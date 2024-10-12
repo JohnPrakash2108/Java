@@ -1,3 +1,4 @@
+// This is Min-Heap if you want max then change '<' to '>' comparison @24, 50, 54 lines so that it will works as Max-Heap
     package john.java.algorithms;
 
     import java.util.ArrayList;
@@ -72,6 +73,7 @@
         }
 
         public ArrayList<T> heapSort(){
+            // If We want original list then we will copy to another list but i don't want in this case so i'm emptying the whole list
             ArrayList<T> answer = new ArrayList<>();
             while (!list.isEmpty()){
                 answer.add(remove());
